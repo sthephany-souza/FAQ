@@ -1,0 +1,108 @@
+body {
+    font-family: "Work Sans", sans-serif;
+    background: linear-gradient(hsl(292, 42%, 14%), hsl(0, 0%, 100%),hsl(292, 16%, 49%));
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.faq-container {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(292, 42%, 14%);
+    padding: 2rem;
+    max-width: 700px;
+    border-radius: 20px;
+}
+
+.faq-container .titulo {
+    font-size: 50px;
+    padding: 15px;
+}
+
+.stars{
+    font-size: 20px;
+    padding-left: 7%;
+}
+
+.pergunta {
+    padding: 12px;
+}
+
+.pergunta .collapsible {
+    color: hsl(292, 42%, 14%);
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    margin: 10px 10px;
+    font-weight: 600;
+}
+
+
+.active,
+.collapsible:hover {
+    color: #8d03ff;
+}
+
+.resposta {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    color: hsl(292, 16%, 49%);
+}
+
+.collapsible:after {
+    background-color: #8d03ff;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    content: "+";
+    font-size: 20px;
+    font-weight: 400;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    background-color: hsl(292, 42%, 14%);
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    content: "\2212";
+    font-size: 20px;
+    font-weight: 400;
+    float: right;
+    margin-left: 5px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*
+    - White: hsl(0, 0%, 100%)
+- Light pink: hsl(275, 100%, 97%)
+- Grayish purple: hsl(292, 16%, 49%)
+- Dark purple: hsl(292, 42%, 14%)
+
+- Mobile: 375px
+- Desktop: 1440px
+
+- Font size (paragraphs): 16px
+
+- Weights: 400, 600, 700
+*/

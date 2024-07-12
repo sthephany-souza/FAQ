@@ -1,0 +1,5 @@
+@media screen and (max-width: 767px) {
+    .faq-container{
+        max-width: 450px;
+    }
+}
